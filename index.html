@@ -12,6 +12,48 @@
     <title>Cosmetics</title>
   </head>
   <body>
+  
+            <div class="modal fade" id="winModall" role="dialog" tabindex="-1">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="background-color:whitesmoke;">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row px-3">
+                        <div class="col-12 col-md-6">
+                          <h4>Вы можете оставить отзыв или задать вопрос</h4>
+                          <div class="popupCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora excepturi sapiente a! Sunt iusto minus incidunt vero consequatur saepe fuga aspernatur, provident at, error eius nam repellat quas eligendi?</div>
+                        </div>
+                        <div class="col-12 col-md-6 align-items-md-end d-flex" style="flex-direction: column;align-items:flex-start;">
+                          <form action="hello.php" method="POST" id="commentsForm">
+                          <div class="namesOfForm">Ваше имя<br>
+                            <input type="text" required class="comName">
+                            </div>
+                            <div class="namesOfForm" style="padding-top: .5rem;">Ваш номер телефона<br>
+                              <input type="number" required class="comPhone">
+                            </div>
+                            <div class="namesOfFormArea" style="padding-top: .5rem;">Коментарии<br>
+                              <textarea name="massage" id="comments" cols="30" rows="8"></textarea>
+                            </div>
+                            <div class="sendcom" style="padding: .5rem 0 1rem 0;align-self: flex-start;">
+                            <button type="submit" class="makeCom" style="font-size: .8rem;">Отправить сообщение</button>
+                            </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+              </div>
+
+
+
+</div>
       <header>
     <div class="container-fluid" style="background-image: url(img/close-up-medical-botox-injection-lips-facial-treatment\ 1\ \(1\).jpg); background-repeat: no-repeat; background-size: cover; background-position:center center;">
         <div class="row" style="height: 100vh;">
@@ -24,11 +66,11 @@
                
                 <div class="collapse navbar-collapse"  id="mainMenu">
                   <ul class="nav navbar-nav d-flex" id="navigate">
-                   <li><a class="nav-item nav-link" href="#about">О Докторе </a></li>
-                    <li><a class="nav-item nav-link" href="#portfolio">Портфолио</a></li>
-                   <li><a class="nav-item nav-link" href="#services">Услуги</a></li>
+                   <li><a class="nav-item nav-link" href="#navabout">О Докторе </a></li>
+                    <li><a class="nav-item nav-link" href="#navportfolio">Портфолио</a></li>
+                   <li><a class="nav-item nav-link" href="#navservices">Услуги</a></li>
                
-                   <li><a class="nav-item nav-link" href="#contacts">Контакты</a></li>
+                   <li><a class="nav-item nav-link" href="#navcontacts">Контакты</a></li>
                    <li><a class="nav-item nav-link" id="phone" href="tel:+380677022474">067-702-74-24</a></li>
                   </ul>
                   </div>
@@ -46,7 +88,7 @@
         </div>
       </div>
       </header>
-      <section id="about">
+      <section id="navabout">
       <div class="container-fluid">
           <div class="row">
               <div class="col-12 col-md-6">
@@ -71,7 +113,7 @@
 </div>
    </section>
       
-   <section id="portfolio">
+   <section id="navportfolio">
        <div class="container">
            <div class="row">
     <div class="col-11 col-lg-12 portfolio">портфолио</div>
@@ -80,7 +122,7 @@
 
     <div class="col col-lg-9" id="guby">
         
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="./img/lips_sravn.jpg" alt="first">
@@ -89,11 +131,11 @@
                 <img class="d-block w-100" src="./img/lips_sravn.jpg" alt="second">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -104,7 +146,7 @@
 </div>
    </section> 
    
-   <section id="services">
+   <section id="navservices">
     <div class="container">
         <div class="row">
  <div class="col-11 col-lg-12 services">наши услуги</div>
@@ -378,11 +420,11 @@
 </div>
 
   <div class="col-12 text-center" style="margin-top: 3rem;">
-    <a href="#contacts"><button class="makeRew">Оставить отзыв</button></a>
+    <button class="makeRew" data-target="#winModall" data-toggle="modal">Оставить отзыв</button>
   </div>
- 
    </div>
-   <section id="contacts">
+
+   <section id="navcontacts">
 <div class="container-fluid">
 <div class="row">
 <div class="col">
@@ -424,10 +466,10 @@
 
 <nav>
   <ul class="footerMenu">
-    <li><a href="#about">О Докторе</a></li>
-    <li><a href="#portfolio">Портфолио</a></li>
-    <li><a href="#services">Услуги</a></li>
-    <li><a href="#contacts">Контакты</a></li>
+    <li><a href="#navabout">О Докторе</a></li>
+    <li><a href="#navportfolio">Портфолио</a></li>
+    <li><a href="#navservices">Услуги</a></li>
+    <li><a href="#navcontacts">Контакты</a></li>
   </ul>
 </nav>
 
@@ -445,6 +487,7 @@
 
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>

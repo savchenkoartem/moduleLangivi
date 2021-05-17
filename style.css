@@ -23,6 +23,8 @@ body {
     
 }
 
+
+
 /* .collapse.show {
     position: absolute;
     top: 60px;
@@ -217,15 +219,16 @@ ul li:not(.headLi) {
     transform: rotate(135deg);
 }
 
-.makeRew { 
+.makeRew,.makeCom { 
     background-color: #333333; 
     color: #FFFFFF;
     width: 10rem;
     height: 2.5rem;
     border: none;
+    cursor: pointer;
 }
 
-#contacts {
+#navcontacts {
     background: url(./img/Rectangle.svg);
     min-height: 80vh;
     margin-top: 50px;
@@ -258,12 +261,24 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.inpName,.inpPhone,#massage {
+.inpName,.inpPhone,#massage,.comName,.comPhone,#comments {
     width: 15rem;
     min-height: 2rem;
     border: 1px solid #D1D5DB;
     color: #6B7280;
     margin-top: 5px;
+}
+
+.comName,.comPhone,#comments {
+    width: 18rem;
+}
+
+input,textarea {
+    outline: none;
+}
+
+input:focus,textarea:focus {
+    outline: 1px solid blueviolet;
 }
 
 .footerMenu {
@@ -334,6 +349,8 @@ flex-wrap: wrap;
     bottom: 1rem;
     cursor: pointer;
 }
+
+
 
 
 

@@ -24,16 +24,23 @@ circle.onclick=()=>{
 
 
 
+
 let prices=$('.pricesServices').hide(); 
 let buton1=$(".but1")
 
 $(document).ready(function(){
   buton1.click(function(){
-   $ (prices[buton1.index(this)]).slideToggle(500);
+   $ (prices[buton1.index(this)]).slideToggle(900,'easeInOutBack');
 this.classList.toggle('rotate');
 
   })
 })
+
+$('a[href^="#nav"]').click(function(){
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top}, 1000,'easeOutSine');
+  return false;
+  });
 
 
 
