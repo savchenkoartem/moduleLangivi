@@ -350,7 +350,12 @@ flex-wrap: wrap;
     cursor: pointer;
 }
 
-
+@media (max-width: 576px) {
+    .rectphoto {
+        display: none;
+    }
+    
+}
 
 
 
