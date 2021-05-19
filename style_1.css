@@ -9,6 +9,10 @@ body {
    background-color: whitesmoke;
 }
 
+#body2{
+    overflow: hidden;
+}
+
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 18px;
@@ -355,6 +359,14 @@ flex-wrap: wrap;
         display: none;
     }
     
+}
+
+.succes {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border: 1px solid #6B7280;
+
 }
 
 

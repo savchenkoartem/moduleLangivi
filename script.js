@@ -22,6 +22,12 @@ circle.onclick=()=>{
   circle.style.transform='rotate(360deg)';
 }
 
+let nameofForm1= document.querySelector('.inpName');
+
+nameofForm1.onchange=()=>{
+  console.log(nameofForm1.value.length)
+}
+
 
 
 

@@ -7,7 +7,7 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_1.css">
 
     <title>Cosmetics</title>
   </head>
@@ -54,40 +54,41 @@
 
 
 </div>
-      <header>
-    <div class="container-fluid" style="background-image: url(img/close-up-medical-botox-injection-lips-facial-treatment\ 1\ \(1\).jpg); background-repeat: no-repeat; background-size: cover; background-position:center center;">
-        <div class="row" style="height: 100vh;">
-          <div class="col"> 
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#" style="font-family: Red Rose; font-size: 1.8em;">IRINA.BEAUTY</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-               
-                <div class="collapse navbar-collapse"  id="mainMenu">
-                  <ul class="nav navbar-nav d-flex" id="navigate">
-                   <li><a class="nav-item nav-link" href="#navabout">О Докторе </a></li>
-                    <li><a class="nav-item nav-link" href="#navportfolio">Портфолио</a></li>
-                   <li><a class="nav-item nav-link" href="#navservices">Услуги</a></li>
-               
-                   <li><a class="nav-item nav-link" href="#navcontacts">Контакты</a></li>
-                   <li><a class="nav-item nav-link" id="phone" href="tel:+380677022474">067-702-74-24</a></li>
-                  </ul>
-                  </div>
-                  </nav>
-                  <div class="container">
-                      <div class="row" style="justify-content: center;">
-                          <div class="col col-md-7">
-                  <h2 class="text-light" style="font-size: 2.5em; text-align: center;font-weight: 400;margin-top: 55vh;">Подчеркнем вашу естественность и индивидуальность</h2>
-                  </div>
-                  </div>
-                </div>
-              
+<header>
+<div class="container-fluid" style="background-image: url(img/close-up-medical-botox-injection-lips-facial-treatment\ 1\ \(1\).jpg); background-repeat: no-repeat; background-size: cover; background-position:center center;">
+    <div class="row" style="height: 100vh;">
+      <div class="col"> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#" style="font-family: Red Rose; font-size: 1.8em;">IRINA.BEAUTY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="collapse navbar-collapse"  id="mainMenu">
+              <ul class="nav navbar-nav d-flex" id="navigate">
+               <li><a class="nav-item nav-link" href="#navabout">О Докторе </a></li>
+                <li><a class="nav-item nav-link" href="#navportfolio">Портфолио</a></li>
+               <li><a class="nav-item nav-link" href="#navservices">Услуги</a></li>
+           
+               <li><a class="nav-item nav-link" href="#navcontacts">Контакты</a></li>
+               <li><a class="nav-item nav-link" id="phone" href="tel:+380677022474">067-702-74-24</a></li>
+              </ul>
+              </div>
+              </nav>
+            
+              <div class="container">
+                  <div class="row" style="justify-content: center;">
+                      <div class="col col-md-7">
+              <h2 class="text-light" style="font-size: 2.5em; text-align: center;font-weight: 400;margin-top: 55vh;">Подчеркнем вашу естественность и индивидуальность</h2>
+              </div>
+              </div>
+            </div>
+          
 
-        </div>
-        </div>
-      </div>
-      </header>
+    </div>
+    </div>
+  </div>
+  </header>
       <section id="navabout">
       <div class="container-fluid">
           <div class="row">
@@ -428,20 +429,20 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col">
-<form action="hello.php" method="post" id="myForm" style="opacity: 100%;">
+  <form action="hello.php" method="post" id="myForm" style="opacity: 100%;">
 <h5 style="padding-bottom: 0;">Вы можете оставить отзыв или задать вопрос</h5>
 <p style="font-size: 0.8rem;font-weight: 400;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
 <div class="col-12 flex-md-row col-md-12 d-flex flex-column" style="justify-content: space-around;">
 <div class="con">
 <div class="namesOfForm">Ваше имя<br>
-<input type="text" required class="inpName">
+<input type="text" required class="inpName" name="name">
 </div>
 <div class="namesOfForm">Ваш номер телефона<br>
-  <input type="number" required class="inpPhone" placeholder="+380">
+  <input type="number" required class="inpPhone" placeholder="+380" name="phone">
 </div>
 </div>
 <div class="namesOfFormArea">Коментарии<br>
-  <textarea name="massage" id="massage" cols="30" rows="5">Интересует контурная пластика губ....</textarea>
+  <textarea placeholder="Интересует контурная пластика губ..." required name="massage" id="massage" cols="30" rows="5"></textarea>
 </div>
 </div>
 <div class="submit">
