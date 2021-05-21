@@ -1,4 +1,7 @@
 <?php 
+$to='tome_artem@gmail.com\n';
+$subject='Письмо с сайта\n';
+$from='info@yoursite.com\n';
 $name = $_POST['name'];
 $phone=$_POST['phone'];
 $massage=$_POST['massage'];
@@ -6,7 +9,8 @@ $name=htmlspecialchars($name);
 $phone=htmlspecialchars($phone);
 $name=urldecode(trim($name));
 $phone=urldecode(trim($phone));
-mail("savchenko.artem1@gmail.com", "Заявка с сайта", "ФИО:".$name.". tel: ".$phone ,"From: example2@mail.ru \r\n");
+$headers="FROM:$from\r\nReply-to:$from\r\nФИО:$name\r\nТелефон клиента: $phone\r\nContent-type:text/plain;charset=utf-8\r\n";
+mail($to,$subject,$massage,$headers);
 
 ?>
 <!doctype html>
@@ -60,7 +64,7 @@ mail("savchenko.artem1@gmail.com", "Заявка с сайта", "ФИО:".$name
   </header>
 
 <script type="text/javascript">
-setTimeout('location.replace("/index.php")', 3500);
+setTimeout('location.replace("/index.php")', 3700);
 </script> 
 </body>
 </html>

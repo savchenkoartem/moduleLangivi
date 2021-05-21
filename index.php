@@ -29,15 +29,15 @@
                           <div class="popupCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora excepturi sapiente a! Sunt iusto minus incidunt vero consequatur saepe fuga aspernatur, provident at, error eius nam repellat quas eligendi?</div>
                         </div>
                         <div class="col-12 col-md-6 align-items-md-end d-flex" style="flex-direction: column;align-items:flex-start;">
-                          <form action="hello.php" method="POST" id="commentsForm">
+                          <form action="rewiews.php" method="POST" id="commentsForm">
                           <div class="namesOfForm">Ваше имя<br>
-                            <input type="text" required class="comName">
+                            <input type="text" required class="comName" name="comName">
                             </div>
                             <div class="namesOfForm" style="padding-top: .5rem;">Ваш номер телефона<br>
-                              <input type="number" required class="comPhone">
+                              <input type="number" required class="comPhone" name="comPhone">
                             </div>
                             <div class="namesOfFormArea" style="padding-top: .5rem;">Коментарии<br>
-                              <textarea name="massage" id="comments" cols="30" rows="8"></textarea>
+                              <textarea name="comMassage" id="comments" cols="30" rows="8"></textarea>
                             </div>
                             <div class="sendcom" style="padding: .5rem 0 1rem 0;align-self: flex-start;">
                             <button type="submit" class="makeCom" style="font-size: .8rem;">Отправить сообщение</button>
